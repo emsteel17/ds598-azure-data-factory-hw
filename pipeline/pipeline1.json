@@ -80,8 +80,12 @@
 									"referenceName": "Bronze_Source_Weather_Historical",
 									"type": "DatasetReference",
 									"parameters": {
+										"lat": 42.3601,
 										"lon": -71.0589,
-										"start": "@item().start"
+										"dataType": "hour",
+										"start": "@item().start",
+										"end": "@item().end",
+										"appid": "@activity('Web1').output.value"
 									}
 								}
 							],
@@ -104,7 +108,7 @@
 				"type": "string"
 			},
 			"dateRanges": {
-				"type": "string",
+				"type": "array",
 				"defaultValue": [
 					{
 						"start": "1662940800",
