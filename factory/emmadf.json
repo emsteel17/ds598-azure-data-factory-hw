@@ -1,0 +1,9 @@
+{
+	"name": "emmadf",
+	"location": "eastus2",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "7fd1e3c4-49f5-45b2-ba1c-59d6868cb373",
+		"tenantId": "d57d32cc-c121-488f-b07b-dfe705680c71"
+	}
+}
