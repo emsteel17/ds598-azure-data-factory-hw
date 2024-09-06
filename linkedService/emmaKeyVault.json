@@ -1,0 +1,10 @@
+{
+	"name": "emmaKeyVault",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://emmavaultofsecrets.vault.azure.net/"
+		}
+	}
+}
