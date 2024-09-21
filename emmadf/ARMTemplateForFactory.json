@@ -443,8 +443,11 @@
 								"referenceName": "HistoricalAirPollutionBronzeSource",
 								"type": "DatasetReference",
 								"parameters": {
+									"lat": 42.3601,
 									"lon": -71.0589,
-									"end": 1695168000
+									"start": 1695313134,
+									"end": 1726935534,
+									"appid": "@activity('Web1').output.value"
 								}
 							}
 						],
