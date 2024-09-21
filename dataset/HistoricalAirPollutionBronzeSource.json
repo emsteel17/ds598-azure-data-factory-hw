@@ -1,0 +1,40 @@
+{
+	"name": "HistoricalAirPollutionBronzeSource",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "OpenWeatherAPIhistoricalAirPollution",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"lat": {
+				"type": "float",
+				"defaultValue": 42.3601
+			},
+			"lon": {
+				"type": "float",
+				"defaultValue": -71.0589
+			},
+			"start": {
+				"type": "int",
+				"defaultValue": 1697760000
+			},
+			"end": {
+				"type": "int",
+				"defaultValue": 1695168000
+			},
+			"appid": {
+				"type": "string",
+				"defaultValue": "@activity('Web1').output.value"
+			}
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "data/2.5/air_pollution/history?lat=@{dataset().lat}&lon=@{dataset().lon}&start=@{dataset().start}&end=@{dataset().end}&appid=@{dataset().appid}"
+			}
+		},
+		"schema": {}
+	}
+}
