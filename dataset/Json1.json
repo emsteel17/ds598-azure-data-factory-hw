@@ -1,0 +1,19 @@
+{
+	"name": "Json1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "emmaDataLakeStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "data/2.5/history",
+				"fileSystem": "bronze"
+			}
+		},
+		"schema": {}
+	}
+}
